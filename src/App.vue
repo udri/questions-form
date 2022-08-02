@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <MiniHeader />
     <QuestionsList />
   </div>
 </template>
 
 <script>
+import MiniHeader from "./components/MiniHeader.vue";
 import QuestionsList from "./components/QuestionsList.vue";
 
 export default {
   name: "App",
   components: {
+    MiniHeader,
     QuestionsList,
   },
 };
@@ -21,11 +23,9 @@ body {
   background: #2c3e50;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #9ebddc;
-  margin-top: 60px;
 }
 </style>

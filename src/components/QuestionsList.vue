@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div>this is where the questions list will be</div>
     <ul>
       <li v-for="q in questions" :key="q.ID">
         <p>{{ q.Title }}</p>
@@ -60,6 +59,18 @@ export default {
 };
 </script>
 <style>
+#miniHeader {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+div#mini-header * {
+  margin: 20px;
+}
+
 ul {
   list-style-type: none;
   text-align: left;
