@@ -7,11 +7,21 @@
         <section>
           <label>
             yes
-            <input type="radio" value="yes" :name="q.ID" />
+            <input
+              type="radio"
+              value="yes"
+              :name="q.ID"
+              v-model="answers[q.ID - 1]"
+            />
           </label>
           <label>
             no
-            <input type="radio" value="no" :name="q.ID" />
+            <input
+              type="radio"
+              value="no"
+              :name="q.ID"
+              v-model="answers[q.ID - 1]"
+            />
           </label>
         </section>
       </li>
@@ -44,6 +54,7 @@ export default {
           Title: "Job level change?",
         },
       ],
+      answers: [],
     };
   },
 };
