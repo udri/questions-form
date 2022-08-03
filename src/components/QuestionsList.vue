@@ -59,18 +59,6 @@ export default {
 };
 </script>
 <style>
-#miniHeader {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-}
-div#mini-header * {
-  margin: 20px;
-}
-
 ul {
   list-style-type: none;
   text-align: left;
